@@ -1625,7 +1625,7 @@ bool vsid::VSIDPlugin::outOfVis(EuroScopePlugIn::CFlightPlan& FlightPlan)
 	{
 		for (auto& atc : this->sectionAtc)
 		{
-			if (myCallsign == atc.callsign || myFreq == atc.freq)
+			if (myCallsign == atc.callsign)
 			{
 				if (atc.visPoints.empty()) return true;
 
